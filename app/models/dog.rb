@@ -4,21 +4,13 @@ class Dog
   attr_accessor :name, :breed, :age
 
   @@all = []
-
-  def initialize(student_hash)
-    class Student
-
-  attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_quote, :bio, :profile_url
-
-  @@all = []
-
   def initialize(id:nil, name:, breed:)
     @id = id
     @name = name
     @breed = breed
     @@all << self
   end
-  
+
   def self.all
     @@all << self
   end
